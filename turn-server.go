@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	publicIP := flag.String("public-ip", "18.217.20.92", "IP Address that TURN can be contacted by.")
+	publicIP := flag.String("public-ip", "", "IP Address that TURN can be contacted by.")
 	port := flag.Int("port", 3478, "Listening port.")
 	users := flag.String("users", "", "List of username and password (e.g. \"user=pass,user=pass\")")
 	realm := flag.String("realm", "pion.ly", "Realm (defaults to \"pion.ly\")")
